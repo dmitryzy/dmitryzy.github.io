@@ -1,0 +1,118 @@
+html {
+    background-color: white;
+}
+h1,h2{
+	text-align: center;
+}
+body {
+	margin: 0;
+	padding: 0 15px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+
+}
+.header {
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	margin: 0 auto 30px;
+	padding: 30px 0 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+	border-bottom: 30px solid #0E0E19;
+	background-image: url(../img/bg.jpg);
+	background-repeat: repeat repeat;
+
+}
+/*.blackline{
+	display: block;
+	background-color: #0E0E19;
+	height: 30px;
+	margin-top: -50px;
+}*/
+.main {
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	margin: auto;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center; 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+0,7d7e7d+13,7d7e7d+13,7d7e7d+74 */
+background: rgb(14,14,14); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 13%, rgba(125,126,125,1) 13%, rgba(125,126,125,1) 74%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 74%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
+
+margin-top: -30px;
+
+}
+.footer {
+	background: #222;
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	color: #eee;
+	margin: auto;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.nav{
+	margin-top: 15px;
+	margin-right: 30px;
+	flex-grow: 1;
+
+}
+.header-image{
+	flex-grow: 4;
+	margin-bottom: -20px;
+	text-align: center;
+}
+.nav li{
+	text-decoration: none;
+	list-style: none;
+	display: block;
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-color: white;
+	color: black;
+}
+
+.nav li::before{
+	content: "";
+	margin-left: 5px;
+
+}
+.main div{
+	border: 1px solid black;
+	margin: 5px 5px 5px 5px;
+	background-color: #bcbacf;
+	border-radius: 10px;
+}
+.main div div{
+	border: 0 none;
+	background-color: white;
+	padding: 2px;
+}
+.about, .projects, .publication{
+	flex-grow: 1;
+	padding: 4px;
+}
+.projects, .publication{
+	max-width: 400px;
+
+}
