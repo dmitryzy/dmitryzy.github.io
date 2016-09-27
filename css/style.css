@@ -1,7 +1,11 @@
 html {
     background-color: white;
 }
-h1,h2{
+h1{
+	font-family: 'Cormorant', serif;
+    font-size: 48px;
+}
+h2{
 	text-align: center;
 }
 body {
@@ -11,13 +15,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex: auto;
+	font-family: Arial, Verdana, sans-serif;
 
 }
 .header {
 	width: 100%;
 	max-width: 960px;
 	min-width: 430px;
-	margin: 0 auto 30px;
+	margin: 0 auto 10px;
 	padding: 30px 0 10px;
 	display: -webkit-flex;
 	display: flex;
@@ -27,14 +32,7 @@ body {
 	border-bottom: 30px solid #0E0E19;
 	background-image: url(../img/bg.jpg);
 	background-repeat: repeat repeat;
-
 }
-/*.blackline{
-	display: block;
-	background-color: #0E0E19;
-	height: 30px;
-	margin-top: -50px;
-}*/
 .main {
 	width: 100%;
 	max-width: 960px;
@@ -46,15 +44,12 @@ body {
 	display: flex;
 	box-sizing: border-box;
 	justify-content: center; 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+0,7d7e7d+13,7d7e7d+13,7d7e7d+74 */
-background: rgb(14,14,14); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 13%, rgba(125,126,125,1) 13%, rgba(125,126,125,1) 74%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 74%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
-
-margin-top: -30px;
-
+    background: rgb(14,14,14); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 13%, rgba(125,126,125,1) 13%, rgba(125,126,125,1) 74%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 74%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(14,14,14,1) 0%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 13%,rgba(125,126,125,1) 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=0 ); /* IE6-9 */
+    margin-top: -50px;
 }
 .footer {
 	background: #222;
@@ -81,38 +76,32 @@ margin-top: -30px;
 	text-decoration: none;
 	list-style: none;
 	display: block;
-}
-
-.nav a{
-	text-decoration: none;
+	margin-bottom: 5px;
+	max-width: 150px;
 	font-size: 20px;
 	font-weight: bold;
 	font-variant: small-caps;
 	background-color: white;
 	color: black;
-}
-
-.nav li::before{
-	content: "";
-	margin-left: 5px;
-
-}
-.main div{
-	border: 1px solid black;
-	margin: 5px 5px 5px 5px;
-	background-color: #bcbacf;
-	border-radius: 10px;
-}
-.main div div{
+	cursor: pointer;
 	border: 0 none;
-	background-color: white;
-	padding: 2px;
+	border-radius: 5px;
+	text-align: center;
 }
 .about, .projects, .publication{
 	flex-grow: 1;
 	padding: 4px;
+	border: 1px solid black;
+	margin: 5px 5px 5px 5px;
+	background-color: white;
+	border-radius: 10px;
+	min-height: 80px;
+	display: none;
 }
-.projects, .publication{
-	max-width: 400px;
-
+.active{
+	display: block;
+}
+li.active{
+	background-color: grey;
+	color: white;
 }

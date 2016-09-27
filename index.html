@@ -3,72 +3,64 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<meta charset="utf-8">
 	<title>Dmytry Tsymay personal page</title>
 </head>
 <body>
 <div class="header">
 	<div class="header-image">
-		<img src="img/photo2.png">
+		<img class="my" src="img/photo2.png">
 	</div>
 	<div class="nav">
 	<h1>Dmytry Tsymay</h1>
-	<ul>
-		<li><a href="#about">About me</a></li>
-		<li><a href="#project">Projects</a></li>
-		<li><a href="#publ">Publication</a></li>
+	<ul class="tabs__caption">
+		<li class="active">About me</li>
+		<li>Projects</li>
+		<li>Publication</li>
 	</ul>
 	</div>
 </div>
-<div class="main">
-	<div class="projects">
-		<h2>Projects</h2>
-		<a name="project">
-		<div>
-			Программа предназначена для демонстрации вычислений по уравнениям состояния газов. Выполнена с использованием python 3 и PyQt. Исходный код <a href="https://github.com/dmitryzy/fizchemistry">https://github.com/dmitryzy/fizchemistry</a>
-		</div>
-		<div>Программа для сбора данных с сайта с помощью фреймворка Scrapy. Выполнена на python. Исходный код: <a href="https://github.com/dmitryzy/gtudata">https://github.com/dmitryzy/gtudata</a></div>
-		<div>
-			<p>Занимался организацией и проведением интернет-конференций по экологии</p>
-			<p><a href="http://fbiosystem.blogspot.ru/">http://fbiosystem.blogspot.ru/</a></p>
-		</div>
-		<div>
-		<p>Занимаюсь преподавательской работой, веду блог для студентов</p>
-		<p>Блог "Химия для студентов" <a href="http://chemistryostu.blogspot.ru/">http://chemistryostu.blogspot.ru/</a></p>
-		</div>
-	</div>
-	<div class="publication">
-		<h2>Publication</h2>
-		<a name="publ">
-		<div>
-			<p>LaTex: Массивы макрокоманд LXF №6 (158) 2012<br>
-			<a href="http://www.linuxformat.ru/anons158.phtml">http://www.linuxformat.ru/anons158.phtml</a><br>
-			Исходные тексты:<a href="https://github.com/dmitryzy/tests-pak">https://github.com/dmitryzy/tests-pak</a></p>
-		</div>
-		<div>
-			<p>Scilab: Строим графики LXF №6 (210) 2016 <br>
-			<a href="http://www.linuxformat.ru/anons210.phtml">http://www.linuxformat.ru/anons210.phtml</a><br> 
-			Исходные тексты: <a href="https://github.com/dmitryzy/diagramm">https://github.com/dmitryzy/diagramm</a> 
-			</p>
-		</div>
-		<div>
-			<p>Scrapy: собираем данные и сохраняем в базу данных <br>
-			<a href="https://habrahabr.ru/post/308660/">https://habrahabr.ru/post/308660/</a>
-			</p>
-		</div>
-		<h2>Основные научные публикации</h2>
-		<p><a href="http://elibrary.ru/author_items.asp?authorid=159240">http://elibrary.ru/author_items.asp?authorid=159240</a></p>
-		
-	</div>
-		<div class="about">
-		<a name="about"></a>
+<div class="main tabs">
+	<div class="about active tabs__content">
 		<h2>About me</h2>
-		<p>Занимаюсь программированием. Решаю задачи анализа, визуализации и обработки данных.</p>
+		<p>Занимаюсь программированием. Решаю задачи анализа, визуализации и обработки данных. Здесь планирую выкладывать мои работы, связанные с программированием.</p>
 		<p>Linkedin: <a href="https://ru.linkedin.com/in/dmitryzymai">https://ru.linkedin.com/in/dmitryzymai</a></p>
 		<p>Хабр <a href="https://habrahabr.ru/users/dmvcm/">https://habrahabr.ru/users/dmvcm/</a></p>
-		<p>GitHub: <a href="http://github.com/dmitryzy/">http://github.com/dmitryzy/</a></p>
-		
-		
+		<p>GitHub: <a href="http://github.com/dmitryzy/">http://github.com/dmitryzy/</a></p>		
+	</div>
+	<div class="projects tabs__content">
+		<h2>Projects</h2>
+			<p>Программа предназначена для демонстрации вычислений по уравнениям состояния газов. Выполнена с использованием python 3 и PyQt. <br> 
+			Исходный код <a href="https://github.com/dmitryzy/fizchemistry">https://github.com/dmitryzy/fizchemistry</a></p>
+			<p>Программа для сбора данных с сайта с помощью фреймворка Scrapy. Выполнена на python.<br> 
+			Исходный код: <a href="https://github.com/dmitryzy/gtudata">https://github.com/dmitryzy/gtudata</a></p>
+			<p>Занимался организацией и проведением интернет-конференций по экологии. 
+			<a href="http://fbiosystem.blogspot.ru/">http://fbiosystem.blogspot.ru/</a></p>
+			<p>Занимаюсь преподавательской работой, веду блог "Химия для студентов" <a href="http://chemistryostu.blogspot.ru/">http://chemistryostu.blogspot.ru/</a></p>
+	</div>
+	<div class="publication tabs__content">
+		<h2>Publication</h2>
+		<ul>
+			<li>
+			LaTex: Массивы макрокоманд LXF №6 (158) 2012<br>
+			<a href="http://www.linuxformat.ru/anons158.phtml">http://www.linuxformat.ru/anons158.phtml</a><br>
+			Исходные тексты:<a href="https://github.com/dmitryzy/tests-pak">https://github.com/dmitryzy/tests-pak</a>
+			</li>
+			<li>
+			Scilab: Строим графики LXF №6 (210) 2016 <br>
+			<a href="http://www.linuxformat.ru/anons210.phtml">http://www.linuxformat.ru/anons210.phtml</a><br> 
+			Исходные тексты: <a href="https://github.com/dmitryzy/diagramm">https://github.com/dmitryzy/diagramm</a> 
+			</li>
+			<li>
+			Scrapy: собираем данные и сохраняем в базу данных <br>
+			<a href="https://habrahabr.ru/post/308660/">https://habrahabr.ru/post/308660/</a>
+			</li>
+			<li>Основные научные публикации<br>
+			<a href="http://elibrary.ru/author_items.asp?authorid=159240">http://elibrary.ru/author_items.asp?authorid=159240</a></li>
+		</ul>
 	</div>
 </div>
 <div class="footer">
