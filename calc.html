@@ -3,13 +3,15 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/stylecalc.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="js/d3.v3.js"></script><!--http://d3js.org/d3.v3.js-->
 	<script src="js/trinagle.js"></script>
-	<script src="js/load.js"></script>
+	<script src="js/calc.js"></script>
+	<script src="js/loadcalc.js"></script>
 	<title>Dmytry Tsymay personal page</title>
 </head>
 <body>
@@ -25,20 +27,13 @@
 </div>
 <div class="main tabs">
 	<div>
-		<div class="diagr">
-			<h1>Диаграмма трехкомпонентной системы</h1>
-			<a href="http://nano.msu.ru/files/materials/VIII_2010/solid/lecture_td_04.pdf">Подробнее о диаграмме</a>
-			<p>Исходные тексты: <a href="https://github.com/dmitryzy/js_diagramm">https://github.com/dmitryzy/js_diagramm</a></p>
-			<input type="number" id="xa" value=100 class="dt">
-			<input type="number" id="xb" value=0 class="dt">
-			<input type="number" id="xc" value=0 class="dt">
-			<input type="button" id="addpoint" value="Добавить">
-			<input type="button" id="addpath" value="Добавить область из выделенных точек">
+		<div class="calculator">
+			<h1>Калькулятор</h1>
+			<p>Исходные тексты: <a href="https://github.com/dmitryzy/calc">https://github.com/dmitryzy/calc</a></p>
+			<p>Калькулятор на javascript. Добавлены основные арифметические операции. Учитывает приоритет операций. Работает со скобками. Ничего лишнего.</p>
 		</div>
-		<div id="diagramm">
+		<div id="calc">
 		</div>
-		<div id="comment">
-		</div>	
 	</div>
 </div>
 <div class="footer">
