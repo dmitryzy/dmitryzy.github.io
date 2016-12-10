@@ -111,3 +111,9 @@ li.active{
 .calculator{
 	background-color: white;
 }
+.main table{
+	border: 1px black solid;
+}
+.main td{
+	border: 1px black solid;
+}
